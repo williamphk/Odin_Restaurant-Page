@@ -1,3 +1,90 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("bg.jpg");
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(21, 47, 84, 0.9);
+}
+
+header > h1 {
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: aliceblue;
+}
+
+nav {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 30px;
+}
+
 a {
-  color: red;
+  cursor: pointer;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+#content {
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 25px;
+  background-color: rgba(59, 86, 136, 0.8);
+}
+
+#content > h1 {
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: aliceblue;
+}
+
+#content > h2 {
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+#content > .menu-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 10px;
+}
+
+.menu-container > div {
+  width: 300px;
+  height: auto;
+  background-color: rgba(29, 56, 103, 0.55);
+  font-size: 30px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.menu-container > div:hover {
+  background-color: rgba(13, 31, 63, 0.55);
+}
+
+#contact-container {
+  font-size: 20px;
+  color: aliceblue;
+}
+
+#contact-container > img {
+  margin-top: 25px;
 }
